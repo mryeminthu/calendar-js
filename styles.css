@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.calendar {
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.month {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(14, 182, 95);
+    border-radius: 10px;
+    align-items: center;
+    padding: 15px;
+}
+
+.month h2 {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+i {
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.week, .days {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.week {
+    background-color: rgb(249, 248, 248);
+}
+
+.days {
+    line-height: 2.5;
+}
+
+.week div, .days div {
+    width: 14.28%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.days div {
+    border-bottom: 1px solid gray;
+}
+
+.prev-date, .next-date {
+    color: #ccc;
+}
+
+.today {
+    background-color: rgb(68, 189, 139);
+    color: #fff;
+    border-radius: 50%;
+}
